@@ -21,37 +21,45 @@
 
   <nav>
     <div class="nav nav-tabs justify-content-center" id="nav-tab">
-      <button class="nav-link active custom-tab" id="nav-all-countries-tab" data-bs-toggle="tab" data-bs-target="#nav-all-countries" type="button" aria-controls="nav-all-countries" aria-selected="true">All Countries</button>
-      <button class="nav-link custom-tab" id="nav-search-countries-tab" data-bs-toggle="tab" data-bs-target="#nav-search-countries" type="button" aria-controls="nav-search-countries" aria-selected="false">Search Country</button>
+      <button class="nav-link active custom-tab" id="nav-all-countries-tab" data-bs-toggle="tab"
+        data-bs-target="#nav-all-countries" type="button" aria-controls="nav-all-countries" aria-selected="true">All
+        Countries</button>
+      <button class="nav-link custom-tab" id="nav-search-countries-tab" data-bs-toggle="tab"
+        data-bs-target="#nav-search-countries" type="button" aria-controls="nav-search-countries"
+        aria-selected="false">Search Country</button>
     </div>
   </nav>
-  
+
   <div class="tab-content" id="nav-tabContent">
 
     <!-- All Countries -->
-    <div class="tab-pane fade show active" id="nav-all-countries" role="tabpanel" aria-labelledby="nav-all-countries-tab">
+    <div class="tab-pane fade show active" id="nav-all-countries" role="tabpanel"
+      aria-labelledby="nav-all-countries-tab">
       <div id="allCountriesRow" class="row row-cols-1 row-cols-md-4 row-cols-lg-6 g-5 p-5 ">
 
       </div>
     </div>
-    
+
     <!-- Search Country -->
     <div class="tab-pane fade" id="nav-search-countries" role="tabpanel" aria-labelledby="nav-search-countries-tab">
       <div>
-        <div class="d-flex w-25 mx-auto m-5" role="search">
-          <input class="form-control me-2 border-dark" type="search" placeholder="Search Country" aria-label="Search" id="txtSearch">
-          <button class="btn btn-dark" type="button" onclick="searchCountry()">Search</button>
+        <div class="row mx-auto m-5 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 d-flex justify-content-center"role="search">
+          <div class="col mb-3">
+            <input class="form-control border-dark w-100" type="search" placeholder="Search Country" aria-label="Search"id="txtSearch">
+          </div>
+          <div class="col mb-3">
+            <button class="btn btn-dark w-100" type="button" onclick="searchCountry()">Search</button>
+          </div>
         </div>
         <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis" id="searchRow">
         </div>
       </div>
     </div>
-  </div>
 
-  <script src="app.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
 
 </body>
 
